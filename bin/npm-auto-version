@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+// Copyright 2016 Yahoo Inc.
+// Licensed under the terms of the BSD 3-Clause license. Please see LICENSE file in the project root for terms.
+try {
+    require('../')();
+} catch (error) {
+    console.error(error.toString());
+    process.exit(1);
+}
