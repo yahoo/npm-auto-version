@@ -29,6 +29,8 @@ describe('functional', function () {
 
         shell.cd(directory);
         shell.exec('git init');
+        shell.exec('git config user.email "foobar@example.com"');
+        shell.exec('git config user.name "foobar"');
         fs.writeFileSync(path.join(directory, 'package.json'), packageJson);
         shell.exec('git add --all');
         shell.exec('git commit --message "foo"');
@@ -48,6 +50,8 @@ describe('functional', function () {
 
         shell.cd(directory);
         shell.exec('git init');
+        shell.exec('git config user.email "foobar@example.com"');
+        shell.exec('git config user.name "foobar"');
         fs.writeFileSync(path.join(directory, 'package.json'), packageJson);
         shell.exec('git add --all');
         shell.exec('git commit --message "foo"');
@@ -68,6 +72,8 @@ describe('functional', function () {
 
         shell.cd(directory);
         shell.exec('git init');
+        shell.exec('git config user.email "foobar@example.com"');
+        shell.exec('git config user.name "foobar"');
         fs.writeFileSync(path.join(directory, 'package.json'), packageJson);
         shell.exec('git add --all');
         shell.exec('git commit --message "foo"');
@@ -94,6 +100,8 @@ describe('functional', function () {
 
         shell.cd(directory);
         shell.exec('git init');
+        shell.exec('git config user.email "foobar@example.com"');
+        shell.exec('git config user.name "foobar"');
         fs.writeFileSync(path.join(directory, 'package.json'), packageJson);
         shell.exec('git add --all');
         shell.exec('git commit --message "foo"');
